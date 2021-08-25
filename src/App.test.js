@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// function sum(a,b) {
+//   return a + b;
+// }
+// test("check if sum is working", () =>{
+//   const result = sum(2,3)
+//   expect(result).toBe(5)
+// })
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import { shallow } from "enzyme";
+import React from "react";
+import App from "./App"
+
+test("HomePage is rendered", () => {
+  // to check if component is there
+  const component = shallow(<App />)
+  // to find if homepage is there
+  const exists = component.find("Homepage").exists()
+  expect(exists).toBe(true);
+
+})

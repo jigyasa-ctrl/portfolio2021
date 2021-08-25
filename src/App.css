@@ -42,7 +42,9 @@
  /* padding-left: 10px;
   padding-left: 10px;*/
   align-items: center;
+  cursor: pointer;
 }
+
 .carousal > h4{
   width: 300px;
 }

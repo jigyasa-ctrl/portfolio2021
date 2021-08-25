@@ -7,9 +7,9 @@ function Projects() {
     return (
         <div class="projects">
             <img className="arrow" height="40px" src={leftArrow} />
-            <Carousal />
-            <Carousal />
-            <Carousal />
+            <Carousal title="Spotify Clone" desc="Spotify UI clone using context API" />
+            <Carousal title="credit card" desc="Spotify UI clone using context API Spotify UI clone using context API" height="35rem" />
+            <Carousal title="Puppygram" desc="Spotify UI clone using context API" />
             <img className="arrow" height="40px" src={rightArrow} />
         </div>
     )

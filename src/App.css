@@ -33,6 +33,29 @@
   cursor: pointer;
  
 }
+.buttons{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 15rem;
+}
+.buttons> button{
+ font-family: 'Open Sans';
+ height:30px;
+ width: auto;
+ border: none;
+ font-weight: 500;
+
+ cursor: pointer;
+}
+.live{
+  background-color: rgb(12, 175, 12);
+  color: white;
+}
+.source{
+  background-color: rgb(231, 28, 28);
+  color: white;
+}
 .carousal {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;

@@ -8,32 +8,22 @@
 
 import { shallow } from "enzyme";
 import React from "react";
-import { describe } from "yargs";
 import App from "./App"
 
 
-
-  test("Homepage is rendered", () => { 
+  test("Components are rendered", () => { 
     const component = shallow(<App />)
     // to find if homepage is there
-    const exists = component.find("Homepage").exists()
-    expect(exists).toBe(true);
-  
-  })
-  
-  test("About is rendered", () => {
-    const component = shallow(<App />)
+    const homepage = component.find("Homepage").exists()
+    expect(homepage).toBe(true);
+     // to find if about is there
     const aboutComp = component.find("About").exists()
     expect(aboutComp).toBe(true)
-  
-  })
- 
-  test("Projects is rendered", () => {
-    const component = shallow(<App />)
+     // to find if project is there
     const project = component.find("Projects").exists()
     expect(project).toBe(true)
   
   })
- 
+
   
 

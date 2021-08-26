@@ -15,30 +15,87 @@ function Projects() {
         desc: "Spotify UI clone using context API",
         live: "https://github.com/jigyasa-ctrl/Spotify-Clone",
         source: "https://github.com/jigyasa-ctrl/Spotify-Clone",
-        height: "35rem"
+       
     },
     {
         title: "SPOTIFY CLONE",
         desc: "Spotify UI clone using context API",
         live: "",
         source: "https://github.com/jigyasa-ctrl/Spotify-Clone"
-    }]
-   // const [data, setData] = useState(projectData)
+    },
+    {
+        title: "SPOTIFY CLONEss",
+        desc: "Spotify UI clone using context API",
+        live: "",
+        source: "https://github.com/jigyasa-ctrl/Spotify-Clone"
+    },
+    {
+        title: "SPOTIFY CLONEghfg",
+        desc: "Spotify UI clone using context API",
+        live: "",
+        source: "https://github.com/jigyasa-ctrl/Spotify-Clone"
+    },
+    {
+        title: "SPOTIFY CLONE",
+        desc: "Spotify UI clone using context API",
+        live: "",
+        source: "https://github.com/jigyasa-ctrl/Spotify-Clone"
+    },
+    {
+        title: "SPOTIFY CLONE",
+        desc: "Spotify UI clone using context API",
+        live: "",
+        source: "https://github.com/jigyasa-ctrl/Spotify-Clone"
+    },
+]
+    const [stateLeft, setStateLeft] = useState(0)
+    const [stateMiddle, setStateMiddle] = useState(1)
+    const [stateRight, setStateRight] = useState(2)
+
+   async function rightArrowClick(){
+        console.log("hehehe")
+        await setStateLeft(stateLeft+1)
+        await setStateMiddle(stateMiddle+1)
+        console.log(stateMiddle)
+        await setStateRight(stateRight+1)
+    }
+    async function leftArrowClick(){
+        await setStateLeft(stateLeft-1)
+        await setStateMiddle(stateMiddle-1)
+        console.log(stateMiddle)
+        await setStateRight(stateRight-1)
+    }
+
     return (
       <div class="projects">
-        <img className="arrow" height="40px" src={leftArrow} />
-        {projectData.length > 0 &&
-          projectData.map((item) => (
+        <img className="arrow" height="40px" src={leftArrow} onClick ={leftArrowClick} />
+        {/*} //projectData.length > 0 &&
+         // projectData.map((item) => (*/}
             <Carousal
-              title={item.title}
-              desc={item.desc}
-              live={item.live}
-              source={item.source}
-              height={item.height || ""}
+              title={projectData[stateLeft].title}
+              desc={projectData[stateLeft].desc}
+              live={projectData[stateLeft].live}
+              source={projectData[stateLeft].source}
+              height={projectData[stateLeft].height || ""}
             />
-          ))}
+            <Carousal
+              title={projectData[stateMiddle].title}
+              desc={projectData[stateMiddle].desc}
+              live={projectData[stateMiddle].live}
+              source={projectData[stateMiddle].source}
+              height="35rem"
+            />
+            <Carousal
+            title={projectData[stateRight].title}
+              desc={projectData[stateRight].desc}
+              live={projectData[stateRight].live}
+              source={projectData[stateRight].source}
+              height={projectData[stateRight].height || ""}
+            />
+        {/* // ))}
+        }*/}
 
-        <img className="arrow" height="40px" src={rightArrow} />
+        <img className="arrow" height="40px" src={rightArrow} onClick ={rightArrowClick}/>
       </div>
     );
 }

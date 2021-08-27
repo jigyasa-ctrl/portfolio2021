@@ -69,17 +69,19 @@ function Projects() {
   }
 
   async function rightArrowClick() {
-    AniationLeft();
-    console.log("hehehe");
-    await setStateLeft(stateLeft + 1);
-    await setStateMiddle(stateMiddle + 1);
-    console.log(stateMiddle);
-    await setStateRight(stateRight + 1);
-    setTimeout(() => {
-      AniationRight();
-    }, 500);
+     if(stateRight !== projectData.length-1){
+        AniationLeft();
+        await setStateLeft(stateLeft + 1);
+        await setStateMiddle(stateMiddle + 1);
+        await setStateRight(stateRight + 1);
+        setTimeout(() => {
+          AniationRight();
+        }, 500);    
+     }  
+    
   }
   async function leftArrowClick() {
+    if(stateLeft !== 0){
     AniationLeft();
     await setStateLeft(stateLeft - 1);
     await setStateMiddle(stateMiddle - 1);
@@ -88,6 +90,7 @@ function Projects() {
     setTimeout(() => {
       AniationRight();
     }, 500);
+}
   }
 
   return (

@@ -138,6 +138,10 @@
 
 .homepage-div {
   background-color: rgb(138, 43, 226);
+  /*background: url("https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;*/
   width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -194,6 +198,7 @@
 }
 .percent-div {
   background-color: rgba(138, 43, 226, 0.9);
+  
   padding-top: 5%;
   margin-top: 5%;
   padding-bottom: 5%;
@@ -232,6 +237,7 @@
   position: relative;
   background-color: inherit;
   width: 40%;
+  border-radius: 20px;
 }
 
 /* The circles on the timeline */
@@ -296,7 +302,7 @@
   padding: 20px 30px;
   background-color: #8A2BE2;
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

@@ -33,6 +33,23 @@
   padding: 10px;
   cursor: pointer;
 }
+#project-h1{
+  font-family: 'Merienda One', cursive;
+  position: absolute;
+  top: 103rem;
+  font-size: 4rem;
+  color: white;
+  background-color: transparent;
+}
+#timeline-h1{
+  font-family: 'Merienda One', cursive;
+  position: absolute;
+  top: 155rem;
+  font-size: 4rem;
+  color: white;
+  background-color: transparent;
+  z-index: 9;
+}
 .buttons {
   margin-bottom: 20px;
   display: flex;
@@ -219,7 +236,7 @@
   justify-content: space-evenly;
   /*align-items: center;*/
   flex-direction: column;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
   
 }

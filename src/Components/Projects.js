@@ -94,6 +94,8 @@ function Projects() {
   }
 
   return (
+      <>
+       <h1 id="project-h1">Recent Works</h1>
     <div class="projects">
       <img
         className="arrow"
@@ -101,8 +103,7 @@ function Projects() {
         src={leftArrow}
         onClick={leftArrowClick}
       />
-      {/*} //projectData.length > 0 &&
-         // projectData.map((item) => (*/}
+     
       <Carousal
         title={projectData[stateLeft].title}
         desc={projectData[stateLeft].desc}
@@ -134,6 +135,7 @@ function Projects() {
         onClick={rightArrowClick}
       />
     </div>
+    </>
   );
 }
 

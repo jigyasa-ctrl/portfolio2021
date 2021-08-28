@@ -2,6 +2,8 @@ import React from "react";
 
 function Experience() {
   return (
+    <>
+    <h1 id="timeline-h1">Work Experience</h1>
     <div className="timeline">
       <div className="container left">
         <div className="content">
@@ -28,6 +30,7 @@ function Experience() {
       </div>
      
     </div>
+    </>
   );
 }
 

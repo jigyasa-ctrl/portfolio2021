@@ -8,7 +8,7 @@ function About() {
             <div className="about" style={{width: '70%'}}>
             <img className="img" src={logo}/>
             <div>
-                <h1 style={{fontFamily: 'Merienda One'}} >Who am I ?</h1>
+                <h1 style={{fontFamily: 'Merienda One', fontSize: '3rem'}} >Who am I ?</h1>
                 <p> Hi, I am Jigyasa Upadhyay, Frontend Developer from Uttrakhand, India. I have 1 year experience in web development. Building Projects in ReactJS, Javascript, HTML, CSS, Sass, Redux, RestAPI, React contextAPI </p>
                 <button style={{borderRadius: '10px'}}> Download Resume</button>
             </div>

@@ -7,7 +7,7 @@ function Homepage() {
          
             <img className="img" src={logo} />
             <h2 style={{fontWeight: 600}}>Jigyasa Upadhyay</h2>
-            <h3>I am a Frontend Developer @ Active.ai</h3>
+            <h3>I am a Frontend Developer @ Active.Ai</h3>
             <span></span>
             <button>Hire Me</button>
             <downicon></downicon>

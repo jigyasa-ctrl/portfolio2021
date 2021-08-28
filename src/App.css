@@ -53,11 +53,18 @@
 .blogpost{
   border: 2px solid white;
   cursor: pointer;
+  border-radius: 20px;
+ 
   
+}
+.blogpost:hover{
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
 }
 .blogpost > img {
   height: 15rem;
+  width: 18rem;
   padding: 10px 0px;
+  border-radius: 20px;
 }
 .blogpost > h2 {
  margin: 5%;

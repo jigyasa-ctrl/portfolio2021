@@ -187,6 +187,8 @@
 }
 .carousal > img {
   height: 300px;
+  width: 22em;
+  border-radius: inherit;
 }
 .projects {
   width: 100%;

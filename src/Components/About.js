@@ -10,7 +10,8 @@ function About() {
             <img className="img" src={logo}/>
             <div>
                 <h1 style={{fontFamily: 'Merienda One', fontSize: '3rem'}} >Who am I ?</h1>
-                <p> Hi, I am Jigyasa Upadhyay, Frontend Developer from Uttrakhand, India. I have 1 year experience in web development. Building Projects in ReactJS, Javascript, HTML, CSS, Sass, Redux, RestAPI, React contextAPI </p>
+                {/*<p> Hi, I am Jigyasa Upadhyay, Frontend Developer from Uttrakhand, India. I have 1 year experience in web development. Building Projects in ReactJS, Javascript, HTML, CSS, Sass, Redux, RestAPI, React contextAPI </p>*/}
+                <p>A Software Engineer with hands on experience developing websites, Frontend web applications. A Bachelor’s Degree holder in Electonics and Communication Engineering from Birla Institute.</p>
                 <button style={{borderRadius: '10px'}}><a href={resume} download style={{textDecoration: 'none', color: 'inherit'}}> Download Resume </a></button>
             </div>
             </div>

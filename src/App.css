@@ -412,6 +412,7 @@
   .about{
    width: 100%;
    flex-direction: column;
+   border-radius: 0px;
   }
   .blogpost> img{
     width: 100%;
@@ -421,6 +422,7 @@
   }
   .about > div{
     width: auto;
+    border-radius: 0px;
   }
   .percent-div{
     width: 100%;

@@ -7,7 +7,6 @@ function About() {
   return (
     <div className="about-main">
       <div className="about">
-        <img className="img" src={logo} />
         <div>
           <h1 style={{ fontFamily: "Merienda One", fontSize: "3rem" }}>
             Who am I ?

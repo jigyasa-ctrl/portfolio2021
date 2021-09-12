@@ -6,7 +6,7 @@ import resume from "../assets/Jigyasa_06081998.pdf";
 function About() {
   return (
     <div className="about-main">
-      <div className="about" style={{ width: "70%" }}>
+      <div className="about">
         <img className="img" src={logo} />
         <div>
           <h1 style={{ fontFamily: "Merienda One", fontSize: "3rem" }}>

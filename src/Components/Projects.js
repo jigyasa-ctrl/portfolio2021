@@ -143,6 +143,7 @@ function Projects() {
         height="35rem"
       />
       <Carousal
+      className="test"
         title={projectData[stateRight].title}
         desc={projectData[stateRight].desc}
         live={projectData[stateRight].live}
